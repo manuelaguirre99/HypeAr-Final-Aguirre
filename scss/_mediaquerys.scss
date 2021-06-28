@@ -1,0 +1,291 @@
+ /*Medias*/
+
+ /*Mobile*/
+
+ @media screen and (min-width: 320px){
+    /*HOME*/
+    .grilla{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+    "header header header"
+    "box1 box1 box1"
+    "box2 box2 box2"
+    "side side side"
+    "foot foot foot";
+    .box1{
+        display: flex;
+        flex-direction: column;
+        h1{
+            padding-top: 15px;
+        }
+    }
+    .box2{
+        display:flex;
+        flex-direction: column;
+        p{
+            padding-top: 15px;
+            padding-left: 25px;
+        }
+    }
+    .side{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  /*SHOES*/
+  .shoeUno, .shoeDos, .shoeTres {
+    margin: auto;
+}
+   
+    /*HISTORY*/
+    .grilla3{
+        width: 98%;
+        max-width: 1400px;
+        margin: 20px auto;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:repeat(4,auto);
+        grid-template-areas:
+        "header header header header"
+        "box1 box1 box1 box1"
+        "box2 box2 box2 box2"
+        "foot foot foot foot";
+        .box1{
+            padding: auto;
+            margin: auto;
+            flex-direction: column-reverse;
+        }
+        .box3{
+            padding: auto;
+            margin: auto;
+            flex-direction: column-reverse;
+        }
+    }
+     /*NEWS*/
+  .grilla4{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas: 
+    "header header"
+    "box1 box1"
+    "box2 box2"
+    "foot foot";
+      .box1{
+        background-color: rgb(236, 230, 230);;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-area: box1; 
+        h1,h2{
+            text-align: center;
+        }
+    }
+        .box2{
+            background-color: rgb(236, 230, 230);
+            text-align: justify;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: box2; 
+            h2{
+                text-align: center;
+            }  
+        }
+  }
+}    
+   /*TABLET*/
+@media screen and (min-width: 768px){
+    /*HOME*/
+    .grilla{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+    "header header header header"
+    "box1 box1 box2 box2"
+    "side side side side"
+    "foot foot foot foot";
+    .box1{
+        display: flex;
+        flex-direction: column;
+        h1{
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+    }
+    .box2{
+        display:flex;
+        flex-direction: column;
+        p{
+            padding-top: 10px;
+        }
+    }
+    .side{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        .cartas{
+            margin: 10px;
+        }
+    }
+  }
+  /*SHOES*/
+  .shoeUno, .shoeDos, .shoeTres {
+      margin: auto;
+  }
+
+  /*NEWS*/
+  .grilla4{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas: 
+    "header header"
+    "box1 box2"
+    "box1 box2"
+    "foot foot";
+      .box1{
+        background-color: rgb(236, 230, 230);;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-area: box1; }
+        .box2{
+            background-color: rgb(236, 230, 230);
+            text-align: justify;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: box2;   
+        }
+  }
+}
+
+/*HISTORY*/
+@media screen and (min-width:550px){
+.grilla3{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3,auto);
+    grid-template-areas:
+    "header header header header"
+    "box1 box1 box2 box2"
+    "foot foot foot foot";
+    .box1{
+        padding: auto;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    .box3{
+        padding: auto;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+  }
+}
+/*1024*/
+@media screen and (min-width:1024px){
+    /*HOME*/
+    .grilla{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+    "header header header"
+    "box1 box1 side"
+    "box2 box2 side"
+    "foot foot foot";
+    }
+    .grilla .box1{
+        display: flex;
+        flex-direction: row;
+    }
+    .grilla .box2{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .grilla .side{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu li>a{
+        max-width: 80px;
+        padding: 10px;
+    }
+    /*HISTORY*/
+    .grilla3{
+        width: 98%;
+        max-width: 1400px;
+        margin: 20px auto;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:repeat(4,auto);
+        grid-template-areas:
+        "header header header header"
+        "box1 box1 box2 box2"
+        "foot foot foot foot";
+        .box1{
+            padding: auto;
+            margin: auto;
+            flex-direction: column;
+        }
+        .box3{
+            padding: auto;
+            margin: auto;
+            flex-direction: column;
+        }
+    }
+    /*NEWS*/
+
+  .grilla4{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas: 
+    "header header header"
+    "box1 box1 box1"
+    "box2 box2 box2"
+    "foot foot foot";
+    .box1{
+        text-align: justify;
+        display: flex;
+        flex-direction: row;
+        grid-area: box1; }
+        .box2{
+            text-align: justify;
+            display: flex;
+            flex-direction: row-reverse;
+            grid-area: box2;   
+        }
+    }
+}

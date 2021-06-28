@@ -1,0 +1,57 @@
+ /*SECCION HISTORY*/
+.grilla3{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas:
+    "header header header header"
+    "box1 box1 box2 box2"
+    "foot foot foot foot";
+}
+.grilla3 .box1{
+    background-color:rgb(236, 230, 230);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: box1;   
+}
+.grilla3 .box1 p{
+    padding-top: 10px;
+    text-align: justify;
+}
+.grilla3 .box1 h3{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.grilla3 .box3{
+    background-color: rgb(236, 230, 230);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    grid-area: box2;   
+}
+.grilla3 .box3 p{
+    padding-top: 10px;
+    text-align: justify;
+}
+.grilla3 .box3 h3{
+    padding-bottom: 10px;
+    text-align: center;
+}

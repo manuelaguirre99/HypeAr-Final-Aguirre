@@ -1,0 +1,68 @@
+  /*SECCION NEWS*/
+
+  .grilla4{
+    width: 98%;
+    max-width: 1400px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas: 
+    "header header header"
+    "box1 box1 box1"
+    "box2 box2 box2"
+    "foot foot foot";
+    h1{
+        font-size: xx-large;
+        text-align: center;
+    }
+    h2{
+        font-size: x-large;
+        padding: 10px;
+    }
+    .box1{
+        background-color: rgb(236, 230, 230);;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+        text-align: justify;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: box1;   
+        h3,p{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .box2{
+        background-color: rgb(236, 230, 230);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+        text-align: justify;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        grid-area: box2;   
+    }
+}
+
+.grilla4 .box2{
+    background-color: rgb(236, 230, 230);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+    text-align: justify;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    grid-area: box2; 
+    h3,p{
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}

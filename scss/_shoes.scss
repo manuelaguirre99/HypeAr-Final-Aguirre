@@ -1,0 +1,73 @@
+/*SECCION SHOES*/
+
+
+    .grilla2{
+        background-color: black;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        width: 98%;
+        max-width: 1400px;
+        margin: 20px auto;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(4,auto);
+        grid-template-areas:
+        "header header header"
+        "shoe1 shoe1 shoe1"
+        "shoe2 shoe2 shoe2"
+        "shoe3 shoe3 shoe3"
+        "foot foot foot";
+        h1{
+            font-size: x-large;
+            text-align: center;
+        }
+        h2{
+            font-size: xx-large;
+        }
+    }
+    .shoeUno{
+        grid-area: shoe1;
+        border-radius: 5px;
+        background-color: rgb(236, 230, 230) ;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content:space-around;
+        margin-right: 50px;
+            h3{
+                font-size: larger;
+                margin-bottom: 0px;
+            }
+        }
+            
+    .shoeDos{
+        grid-area: shoe2;
+        border-radius: 5px;
+        background-color: rgb(236, 230, 230) ;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0,.40);
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-around;
+        margin-left: 50px;
+            h3{
+                font-size: larger;
+                margin-bottom: 0px;
+            }
+        }
+    .shoeTres{
+        grid-area: shoe3;
+        border-radius: 5px;
+        background-color: rgb(236, 230, 230) ;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0,.40);
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: space-around;
+        margin-right: 50px;
+            h3{
+                font-size: larger;
+                margin-bottom: 0px;
+            }
+        }
