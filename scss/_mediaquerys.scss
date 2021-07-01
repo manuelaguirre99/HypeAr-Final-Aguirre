@@ -208,6 +208,10 @@
         margin: auto;
         flex-direction: column-reverse;
     }
+    .carru{
+        width: 275px;
+        height: 275px;
+    }
   }
 }
 /*1024*/
@@ -252,13 +256,16 @@
         "foot foot foot foot";
         .box1{
             padding: auto;
-            margin: auto;
+            margin-left: 50px;
             flex-direction: column;
         }
         .box3{
             padding: auto;
-            margin: auto;
+            margin-right: 50px;
             flex-direction: column;
+        }
+        .carru{
+            width: 350px;
         }
     }
     /*NEWS*/

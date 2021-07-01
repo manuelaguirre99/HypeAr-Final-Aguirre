@@ -15,7 +15,8 @@ header {
   flex-wrap: wrap;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); }
   header .log0 {
-    font-family: 'Permanent Marker', cursive; }
+    font-family: 'Permanent Marker', cursive;
+    color: white; }
   header .bordo {
     background-color: #640b0b;
     justify-content: space-between; }
@@ -105,7 +106,8 @@ header {
   border-radius: 4px;
   padding: 20px;
   grid-area: foot;
-  text-align: center; }
+  text-align: center;
+  height: 100px; }
 
 /*SECCION SHOES*/
 .grilla2 {
@@ -167,6 +169,10 @@ header {
     font-size: larger;
     margin-bottom: 0px; }
 
+.acordeon {
+  background-color: #ece6e6;
+  text-align: center; }
+
 /*SECCION HISTORY*/
 .grilla3 {
   width: 98%;
@@ -201,11 +207,8 @@ header {
 
 .grilla3 .box3 {
   background-color: #ece6e6;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  text-align: center;
   padding: 10px;
   border-radius: 4px;
-  margin-right: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,6 +223,9 @@ header {
 .grilla3 .box3 h3 {
   padding-bottom: 10px;
   text-align: center; }
+
+.bordesDos {
+  border-radius: 5px; }
 
 /*SECCION NEWS*/
 .grilla4 {
@@ -292,14 +298,17 @@ header {
     text-align: center;
     padding: 10px;
     border-radius: 4px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
     display: block;
     align-items: center;
     justify-content: center;
     grid-area: box1; }
   .grilla5 #gap:hover {
     font-size: 24px; }
+  .grilla5 .casillero {
+    width: 300px;
+    margin-bottom: 15px; }
 
 /*Medias*/
 /*Mobile*/
@@ -453,7 +462,10 @@ header {
     .grilla3 .box3 {
       padding: auto;
       margin: auto;
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse; }
+    .grilla3 .carru {
+      width: 275px;
+      height: 275px; } }
 
 /*1024*/
 @media screen and (min-width: 1024px) {
@@ -485,12 +497,14 @@ header {
     grid-template-areas: "header header header header" "box1 box1 box2 box2" "foot foot foot foot"; }
     .grilla3 .box1 {
       padding: auto;
-      margin: auto;
+      margin-left: 50px;
       flex-direction: column; }
     .grilla3 .box3 {
       padding: auto;
-      margin: auto;
+      margin-right: 50px;
       flex-direction: column; }
+    .grilla3 .carru {
+      width: 350px; }
   /*NEWS*/
   .grilla4 {
     width: 98%;
